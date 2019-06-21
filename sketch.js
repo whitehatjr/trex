@@ -98,11 +98,12 @@ function draw() {
     }
   
     if(obstaclesGroup.isTouching(trex)){
-        gameState = END;
+      dieSound.play();  
+      gameState = END;
+        
     }
   }
   else if (gameState === END) {
-    dieSound.play();
     gameOver.visible = true;
     restart.visible = true;
     

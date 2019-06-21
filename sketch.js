@@ -94,7 +94,7 @@ function draw() {
     spawnObstacles();
     
     if (score>0 && score%100 === 0){
-      checkPointSound.play("checkPoint.mp3");
+      checkPointSound.play();
     }
   
     if(obstaclesGroup.isTouching(trex)){
